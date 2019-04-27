@@ -1,0 +1,4 @@
+# first-01.mycompany.com
+dhcp-host=first-01,de:ad:c0:de:ca:fe,10.0.0.2
+ptr-record=2.0.0.10.in-addr.arpa,first-01.mycompany.com
+#dhcp-option=option:classless-static-route,<ovh-ip>/32,255.255.255.255

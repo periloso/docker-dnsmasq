@@ -1,0 +1,4 @@
+*
+!.gitignore
+!10-default.conf.example
+!20-hosts.conf.example

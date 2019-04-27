@@ -1,0 +1,16 @@
+version: "3.1"
+services:
+  dnsmasq:
+    image: periloso/dnsmasq:latest
+    restart: unless-stopped
+    container_name: dnsmasq
+    privileged: true
+    ports:
+      - 53:53/udp
+      - 53:53/tcp
+      - 67:67/udp
+      - 68:68/udp
+    volumes:
+      - /usr/src/docker-dnsmasq/dnsmasq.conf:/etc/dnsmasq.conf
+      - /usr/src/docker-dnsmasq/conf:/etc/dnsmasq.d
+    network_mode: host
